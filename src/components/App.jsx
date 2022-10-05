@@ -12,7 +12,7 @@ export const App = () => {
     <div
       style={{
         height: '100vh',
-        display: 'flex-column',
+        display: 'block',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
