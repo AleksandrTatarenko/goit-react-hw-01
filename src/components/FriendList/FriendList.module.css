@@ -1,0 +1,28 @@
+.friends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+}
+.friend_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 600px;
+    background-color: azure;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}

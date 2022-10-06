@@ -1,0 +1,26 @@
+.transaction_history {
+    border-collapse: collapse;
+    min-width: 600px;
+    margin-bottom: 50px;
+}
+.transaction_history caption {
+    text-align: center;
+}
+.transaction_history th,
+.transaction_history td {
+    font-size: 30px;
+    font-weight: normal;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head {
+    background-color: aquamarine;
+}
+.row:nth-child(2n+1) {
+    background-color: antiquewhite;
+}
