@@ -1,8 +1,3 @@
-.friend {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 .status {
     margin-left: 20px;
     width: 12px;
@@ -21,6 +16,18 @@
     font-weight: bold;
     font-size: 36px;
     color: black;
+}
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 600px;
+    background-color: azure;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
 }
 .true {
     background-color: red;
