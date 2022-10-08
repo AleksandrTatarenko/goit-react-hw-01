@@ -27,10 +27,6 @@ export const App = () => {
       />
       <TransactionHistory
         transactions={transactions}
-        id={transactions["id"]}
-        type={transactions["type"]}
-        amount={transactions["amount"]}
-        currency={transactions["currency"]}
       />
     </div>
   );

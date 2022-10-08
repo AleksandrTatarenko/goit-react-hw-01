@@ -5,13 +5,13 @@ import css from './FriendList.module.css'
 export const FriendList = ({friends}) => {
     return <div className={css.friends}>
         <ul className={css.friend_list}>
-            {friends.map(friend => (
-                <li className={css.item}>
-                    <FriendListItem key={friend["id"]}
+            {friends.map((friend) => (
+                <li key={friend["id"]} className={css.item}>
+                    <FriendListItem
                     avatar={friend["avatar"]}
                     name={friend["name"]}
                     isOnline={friend["isOnline"]}
-                />
+                    />
                 </li>
             ))}
         </ul>
@@ -19,5 +19,8 @@ export const FriendList = ({friends}) => {
 }
 
 FriendList.propTypes = {
-   friends: PropTypes.arrayOf(PropTypes.object),
+    friends: PropTypes.arrayOf(PropTypes.object),
+    friend: PropTypes.shape({
+        key: PropTypes.number
+    })
 }

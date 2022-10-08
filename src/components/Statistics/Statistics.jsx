@@ -3,7 +3,6 @@ import css from './Statistics.module.css';
 
 export const Statistics = ({stats}) => {
   return (<section className={css.statistics}>
-    <h2 className={css.title}>Upload stats</h2>
     <ul className={css.stat_list}>
       {stats.map(({ id, label, percentage }) => (
         <li key={id} className={css.item}>
@@ -17,7 +16,9 @@ export const Statistics = ({stats}) => {
 
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.object),
-  id: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.string
+  stat: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.string.isRequired
+  })
 };

@@ -1,3 +1,8 @@
+.friend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 .status {
     margin-left: 20px;
     width: 12px;
